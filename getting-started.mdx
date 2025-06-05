@@ -1,0 +1,589 @@
+---
+title: Introduction to Cursor
+description: >-
+  Learn about Cursor's powerful AI features, settings, and customization options for
+  enhanced code development with comprehensive getting started guide.
+'twitter:title': Cursor – Complete Introduction & Getting Started Guide
+'twitter:description': >-
+  Complete guide to Cursor's AI features, settings, and customization options for
+  powerful code development.
+'og:title': Cursor – Complete Introduction & Getting Started Guide
+'og:description': >-
+  Complete guide to Cursor's AI features, settings, and customization options for
+  powerful code development.
+'og:image': >-
+  https://mintlify.s3.us-west-1.amazonaws.com/cursor/images/og/get-started/introduction.png?v=1743819390574
+'twitter:image': >-
+  https://mintlify.s3.us-west-1.amazonaws.com/cursor/images/og/get-started/introduction.png?v=1743819390574
+---
+
+## What is Cursor?
+
+Cursor is a cutting-edge AI-powered code editor built on VS Code that revolutionizes how developers write code. Unlike traditional editors, Cursor integrates powerful AI capabilities directly into your development workflow, making coding faster, smarter, and more intuitive.
+
+### Key Benefits
+
+With Cursor, you can:
+
+- **Write code faster** with intelligent AI-powered autocompletion
+- **Debug more efficiently** with AI-assisted error detection and resolution
+- **Refactor confidently** with context-aware code transformations
+- **Learn continuously** by asking AI about your codebase
+- **Generate code** from natural language descriptions
+- **Maintain consistency** across large codebases with AI guidance
+
+## Core AI Features Overview
+
+After [installation](/get-started/installation), you'll have access to these powerful features that work together seamlessly:
+
+### Tab Completion
+
+Cursor's tab completion is powered by advanced AI models that understand your entire codebase context. As you type, you'll receive intelligent suggestions that:
+
+- Complete your current line of code with high accuracy
+- Suggest entire function implementations based on your intent
+- Help with common patterns and boilerplate code
+- Adapt to your coding style and preferences over time
+- Work across multiple programming languages
+
+**Getting Started with Tab:**
+- Simply start typing and watch AI suggestions appear in gray text
+- Press `Tab` to accept suggestions
+- Press `Esc` to dismiss unwanted suggestions
+- The AI learns from your coding patterns and improves over time
+
+### Chat Interface
+
+Cursor provides a unified AI interface with multiple modes that seamlessly work together for different development tasks.
+
+**Agent Mode (Default)**
+- Make codebase-wide changes and complex refactoring
+- Implement new features from high-level requirements
+- Debug complex issues that span multiple files
+- Generate comprehensive tests and documentation
+- Maintain consistency across your entire project
+
+**Ask Mode**
+- Ask detailed questions about specific code sections
+- Get explanations of complex algorithms and functions
+- Find code patterns and examples within your project
+- Discover and understand large codebases quickly
+
+**Edit Mode**
+- Make precise, targeted changes to selected code
+- Transform code with natural language instructions
+- Apply consistent changes across similar code patterns
+- Refactor with confidence using AI guidance
+
+**Quick Start with Chat:**
+- Use `⌘I` (Mac) or `Ctrl+I` (Windows/Linux) to open the chat interface
+- Switch between modes during conversations as needed
+- Reference specific files with `@filename` syntax
+- Use `@docs` to search external documentation
+
+### Context System
+
+Context is the foundation that powers all of Cursor's AI features. Here's how it works effectively:
+
+- **Automatic Indexing**: When you open a codebase, we automatically [index your code](/context/codebase-indexing) to make it available as context
+- **@-symbols**: Use [@-symbols](/context/@-symbols/overview) to precisely control what context you provide:
+  - [@files](/context/@-symbols/@-files) and [@folders](/context/@-symbols/@-folders) for specific paths
+  - [@web](/context/@-symbols/@-web) for external documentation and resources
+  - [@git](/context/@-symbols/@-git) for version control context and history
+- **Rules**: Configure [rules](/context/rules) to customize AI behavior for your project
+- **MCP**: Set up [Model Context Protocol](/context/model-context-protocol) for external context providers
+
+## Getting Started Quickly
+
+### Essential Keyboard Shortcuts
+
+Learn these fundamental shortcuts for maximum productivity:
+
+**AI Features:**
+- `Tab`: Accept AI code completions
+- `⌘I` / `Ctrl+I`: Open unified chat interface
+- `⌘K` / `Ctrl+K`: Inline code editing with AI
+- `Esc`: Dismiss AI suggestions
+
+**General Editing:**
+- `⌘⇧P` / `Ctrl+Shift+P`: Open Command Palette
+- `⌘P` / `Ctrl+P`: Quick file search and opening
+- `⌘\`` / `Ctrl+\``: Toggle integrated terminal
+- `⌘D` / `Ctrl+D`: Select next occurrence of current word
+
+### First Steps After Installation
+
+1. **Open Your Project**
+   - Use File > Open Folder to open an existing project
+   - Or drag a folder from your file manager onto Cursor
+   - The AI will automatically index your codebase
+
+2. **Try Tab Completion**
+   - Start typing in any code file
+   - Notice gray AI suggestions appearing
+   - Press Tab to accept helpful suggestions
+
+3. **Experiment with Chat**
+   - Press `⌘I` / `Ctrl+I` to open chat
+   - Try asking "What does this function do?" while selecting code
+   - Ask "Help me add error handling to this function"
+
+4. **Use @-symbols**
+   - In chat, type `@` to see available context options
+   - Try `@filename.js` to reference specific files
+   - Use `@docs` to search documentation
+
+## Settings and Customization
+
+Cursor is designed to be highly flexible and customizable. You can configure it in two main ways:
+
+### Cursor Settings
+
+Access Cursor-specific settings via:
+- Gear icon in the interface
+- `⌘⇧J` / `Ctrl+Shift+J` keyboard shortcut
+- Command Palette > `Cursor Settings`
+
+**Key Settings to Configure:**
+
+**AI Behavior:**
+- Model selection and preferences
+- Auto-completion sensitivity and frequency
+- Context window size and management
+- Response style and verbosity
+
+**Performance:**
+- Indexing preferences for large codebases
+- Memory usage limits and optimization
+- Network timeout and retry settings
+
+**Privacy:**
+- Data sharing and telemetry preferences
+- Local vs cloud processing options
+- Sensitive file exclusion patterns
+
+### Editor Settings
+
+Access VS Code-compatible editor settings via:
+- Command Palette (`⌘⇧P` / `Ctrl+Shift+P`) > `"Preferences: Open Settings (UI)"`
+- File > Preferences > Settings (Windows/Linux)
+- Cursor > Preferences > Settings (Mac)
+
+**Essential Editor Configurations:**
+
+**Appearance:**
+- Color theme selection (Dark+, Light+, etc.)
+- Font family and size preferences
+- Icon theme and visual elements
+- Layout and panel positioning
+
+**Behavior:**
+- Tab size and indentation preferences
+- Word wrap and line number settings
+- Auto-save and file watching behavior
+- Extensions and plugin management
+
+## Advanced Features
+
+### Code Generation and Refactoring
+
+Cursor's AI can help with complex code transformations:
+
+**Generate New Code:**
+- Describe functionality in natural language
+- AI generates complete functions and classes
+- Handles multiple programming languages and frameworks
+- Maintains consistency with existing code style
+
+**Refactor Existing Code:**
+- Select code and ask for improvements
+- AI suggests performance optimizations
+- Automatically handles variable renaming and restructuring
+- Maintains functionality while improving readability
+
+### Debugging and Error Resolution
+
+**Intelligent Error Detection:**
+- AI identifies potential bugs before they occur
+- Suggests fixes for compilation errors
+- Explains complex error messages in plain language
+- Provides context-aware debugging guidance
+
+**Interactive Debugging:**
+- Ask AI about error messages and stack traces
+- Get suggestions for debugging strategies
+- AI can walk through code execution mentally
+- Helps identify edge cases and potential issues
+
+### Multi-Language Support
+
+Cursor works effectively with numerous programming languages:
+
+**Fully Supported Languages:**
+- JavaScript/TypeScript with framework support
+- Python with popular library awareness
+- Java with Spring and enterprise framework knowledge
+- C/C++ with modern standard compliance
+- Go with idiomatic pattern recognition
+- Rust with ownership and borrowing guidance
+- And many more...
+
+**Framework Integration:**
+- React, Vue, Angular for frontend development
+- Node.js, Django, Flask for backend development
+- Mobile frameworks like React Native
+- Cloud platforms and deployment tools
+
+## Project Organization Best Practices
+
+### Optimal Project Structure
+
+For best AI performance, organize projects with clear structure:
+
+```
+my-project/
+├── src/                 # Source code
+│   ├── components/      # Reusable components
+│   ├── utils/          # Utility functions
+│   └── tests/          # Unit tests
+├── docs/               # Documentation
+├── config/             # Configuration files
+├── .env.example        # Environment template
+├── README.md           # Project overview
+└── package.json        # Dependencies
+```
+
+**Tips for Better AI Assistance:**
+- Use descriptive, clear file and folder names
+- Include comprehensive README.md documentation
+- Add inline comments for complex business logic
+- Maintain consistent coding style throughout project
+- Document API endpoints and data structures
+
+### Git Integration and Workflow
+
+Cursor includes powerful Git integration that works seamlessly with AI:
+
+**Source Control Features:**
+- Visual diff viewing with AI explanations
+- Intelligent commit message generation
+- Merge conflict resolution with AI guidance
+- Branch management and history exploration
+
+**AI-Powered Git Workflow:**
+- AI can suggest commit messages based on changes
+- Get explanations of complex diffs and merges
+- Ask AI about git commands and best practices
+- Automated code review suggestions before commits
+
+## Language-Specific Guides
+
+### JavaScript and TypeScript Development
+
+**Setup and Configuration:**
+1. Install Node.js from [nodejs.org](https://nodejs.org)
+2. Verify installation with `node --version`
+3. Install recommended extensions for enhanced support
+
+**AI Optimization Tips:**
+- Use TypeScript for better AI code suggestions
+- Include JSDoc comments for function documentation
+- Follow consistent naming conventions
+- The AI understands popular frameworks like React, Vue, and Angular
+
+**Common Patterns:**
+- AI excels at generating React components and hooks
+- Automatic async/await transformation suggestions
+- Intelligent error boundary implementations
+- Performance optimization recommendations
+
+### Python Development
+
+**Environment Setup:**
+1. Install Python from [python.org](https://python.org)
+2. Set up virtual environments for project isolation:
+   ```bash
+   python -m venv project-env
+   source project-env/bin/activate  # On Windows: project-env\Scripts\activate
+   ```
+3. Install packages with pip and maintain requirements.txt
+
+**AI Enhancement Features:**
+- Type hints improve AI suggestion accuracy
+- Follows PEP 8 style guidelines automatically
+- Understands popular libraries (pandas, numpy, flask, django)
+- Generates comprehensive docstrings and unit tests
+
+### Java Development
+
+**Development Environment:**
+1. Install JDK (OpenJDK or Oracle JDK)
+2. Set JAVA_HOME environment variable correctly
+3. Verify with `java --version` command
+
+**AI-Powered Java Features:**
+- Intelligent class and method name suggestions
+- Automatic Javadoc comment generation
+- Spring Framework pattern recognition
+- Maven and Gradle build file assistance
+
+## Troubleshooting Common Issues
+
+### Installation and Setup Problems
+
+**Cursor Won't Start:**
+- Verify system requirements are met
+- Check for conflicting VS Code installations
+- Try running as administrator/sudo if needed
+- Clear cache and restart application
+
+**Extensions Not Working:**
+- Ensure extensions are compatible with Cursor
+- Check extension settings and permissions
+- Try disabling and re-enabling problematic extensions
+- Update to latest versions
+
+### AI Feature Issues
+
+**Suggestions Not Appearing:**
+- Verify internet connection stability
+- Check if you're signed into your Cursor account properly
+- Ensure AI features are enabled in settings
+- Try restarting Cursor to refresh connections
+
+**Slow Response Times:**
+- May occur during peak usage periods
+- Check if you've reached your plan's usage limits
+- Try asking more specific, focused questions
+- Consider upgrading to higher-tier plan for better performance
+
+**Irrelevant Suggestions:**
+- Add more context through comments and documentation
+- Use @-symbols to provide specific context
+- The AI improves accuracy over time as it learns patterns
+- Ensure proper language extensions are installed
+
+### Performance Optimization
+
+**Slow Editor Performance:**
+- Close unused tabs and windows to free memory
+- Disable unnecessary extensions temporarily
+- Increase workspace memory limits in settings
+- Consider hardware upgrades for very large projects
+
+**High CPU Usage:**
+- Check if background indexing is in progress
+- Disable AI features temporarily if needed
+- Ensure you're running the latest Cursor version
+- Monitor system resources and close other applications
+
+## Tips for Maximum Productivity
+
+### Writing Effective AI Prompts
+
+Clear communication with AI leads to significantly better results:
+
+**Be Specific and Detailed:**
+- Instead of: "fix this code"
+- Try: "add null checking to prevent crashes when user object is undefined"
+
+**Provide Adequate Context:**
+- Mention the programming language and framework being used
+- Explain what the code is supposed to accomplish
+- Include any constraints, requirements, or business rules
+- Reference related code or external dependencies
+
+**Use Concrete Examples:**
+- Show expected input/output examples when requesting functions
+- Reference similar existing code patterns in your project
+- Provide sample data structures or API responses
+
+### Leveraging AI for Continuous Learning
+
+Cursor isn't just a productivity tool—it's also excellent for learning and skill development:
+
+**Ask for Detailed Explanations:**
+- Select complex code sections and ask "What does this do?"
+- Request explanations of error messages and warnings
+- Ask about best practices for specific programming patterns
+- Get clarification on unfamiliar libraries or frameworks
+
+**Interactive Code Reviews:**
+- Ask AI to review your code for potential improvements
+- Request suggestions for better performance or readability
+- Get feedback on code structure and organization patterns
+- Learn about security considerations and best practices
+
+**Explore New Technologies:**
+- Ask for examples of using new libraries or frameworks
+- Request comparisons between different technical approaches
+- Get help understanding complex documentation
+- Learn about industry standards and conventions
+
+### Collaborative Development Workflows
+
+When working in teams with Cursor:
+
+**Maintain Consistent Standards:**
+- Use Cursor's formatting features for code consistency
+- Share settings files and configurations across team
+- Use AI to help enforce agreed-upon coding standards
+- Create shared snippets and templates
+
+**Documentation and Communication:**
+- Ask AI to generate comprehensive function documentation
+- Use AI to create clear, informative README files
+- Get help writing descriptive commit messages
+- Generate change logs and release notes
+
+**Code Review Process:**
+- Use AI to pre-review code before submitting
+- Ask for suggestions on improving code clarity
+- Get help explaining complex changes to team members
+- Generate test cases and edge case scenarios
+
+## Models and Pricing
+
+Cursor supports multiple AI models to suit different needs and budgets. You can see all supported models and their pricing on our [models page](/models). 
+
+**Key Considerations:**
+- Different models excel at different types of tasks
+- Higher-tier models provide more accurate and context-aware responses
+- Usage is tracked across all features and billed accordingly
+- Consider your team's needs when selecting plans
+
+**Configuration:**
+- Set up your [API keys](/settings/api-keys) in settings
+- Configure model [preferences](/settings/preferences) for different scenarios
+- Monitor usage through your account dashboard
+
+## Usage and Billing
+
+It's highly recommended to understand [usage tracking](/account/plans-and-usage) and [available plans](/account/plans-and-usage) to make informed decisions about Cursor pricing. 
+
+**Important Points:**
+- Usage is measured across all AI features (chat, completions, etc.)
+- Different models have different costs per request
+- Teams can set usage limits and alerts
+- Detailed usage analytics help optimize costs
+
+For complete pricing information, visit our [pricing page](/account/pricing) to compare plans and features.
+
+## Getting Help and Support
+
+### Documentation and Learning Resources
+
+**Official Resources:**
+- Comprehensive guides at [docs.cursor.sh](https://docs.cursor.sh)
+- Video tutorials and walkthroughs
+- Interactive learning modules and examples
+- Regular blog posts about new features
+
+**Community Support:**
+- Active Discord server for real-time help and discussions
+- Community forum for detailed technical questions
+- GitHub discussions for feature requests and bug reports
+- Follow @cursor_ai on Twitter for updates and announcements
+
+### Professional Support Options
+
+**Subscription Benefits:**
+- Pro and Business subscribers receive priority support
+- Access to dedicated support channels
+- One-on-one onboarding sessions available
+- Direct feedback channel for feature requests
+
+**Getting Help:**
+- Submit tickets through in-app help system
+- Use Command Palette > "Report Issue" for bugs
+- Visit our [troubleshooting guide](/troubleshooting/troubleshooting-guide) for common solutions
+- Join our [community forum](https://discord.com/invite/cursor) for peer support
+
+### Reporting Issues and Feedback
+
+**Bug Reports:**
+- Include steps to reproduce the issue clearly
+- Mention your operating system and Cursor version
+- Attach relevant screenshots or error logs
+- Describe expected vs actual behavior
+
+**Feature Requests:**
+- Describe the use case and problem clearly
+- Explain how it would improve your development workflow
+- Consider alternative solutions that might already exist
+- Provide examples from other tools if applicable
+
+## What's Next?
+
+Now that you understand Cursor's core capabilities, here are recommended next steps to maximize your productivity:
+
+### Immediate Actions
+
+1. **Complete the Interactive Tutorial**
+   - Try the built-in tutorial (Help > Interactive Tutorial)
+   - Practice using Tab completion and Chat features
+   - Experiment with different @-symbols and context options
+
+2. **Customize Your Environment**
+   - Install language-specific extensions for your tech stack
+   - Configure keyboard shortcuts to match your preferences
+   - Set up preferred themes, fonts, and layout options
+
+3. **Connect with the Community**
+   - Join Discord and introduce yourself
+   - Share your experiences and learn from other developers
+   - Stay updated on new features and best practices
+
+### Ongoing Development
+
+1. **Master Advanced Features**
+   - Learn about debugging with AI assistance and guidance
+   - Experiment with code generation for different programming languages
+   - Try collaborative features if you're working in a team environment
+
+2. **Optimize Your Development Workflow**
+   - Track which AI features save you the most development time
+   - Develop efficient patterns for common coding tasks
+   - Create custom snippets, templates, and automation scripts
+
+3. **Stay Current**
+   - Enable automatic updates for the latest features and improvements
+   - Read release notes to learn about new capabilities
+   - Participate in beta testing programs and provide feedback
+
+## Common Mistakes and Best Practices
+
+When getting started with Cursor, there's several common mistakes that new users often make. Understanding these pitfalls can help you avoid frustration and get the most out of your AI-powered development experience.
+
+### Typical User Errors
+
+**Overrelying on AI Suggestions**
+Many developers becomes too dependent on AI completions without understanding the generated code. This can leads to bugs and security vulnerabilities that are hard to detect later. Always review AI suggestions carefully before accepting them.
+
+**Poor Prompt Engineering**
+Users frequently write vague prompts like "make this better" instead of being specific about what they want. The AI works much more effectively when you provide clear, detailed instructions about your goals and constraints.
+
+**Ignoring Context Management**
+One of the most common issues is not properly managing context. Users forget to use @-symbols to include relevant files or documentation, resulting in suggestions that doesn't fit their specific use case.
+
+### Pro Tips for Success
+
+1. **Start Small**: Begin with simple tasks like code completion before moving to complex refactoring
+2. **Be Patient**: The AI learning curve varies between users - some pick it up quickly, others need more time
+3. **Experiment Regularly**: Try different approaches to find what works best for your coding style
+
+Remember: Cursor is most effective when you maintain a collaborative mindset with the AI rather than treating it as a replacement for your own thinking.
+
+## Conclusion
+
+Cursor represents a significant advancement in code editor technology, combining the familiar VS Code interface with powerful AI capabilities. Whether you're a beginner learning to code or an experienced developer working on complex projects, Cursor's AI features can significantly enhance your productivity and code quality.
+
+Remember that becoming proficient with any new tool takes time, practice, and experimentation. Don't hesitate to explore different features, ask questions, and find what works best for your unique development style and project requirements.
+
+The AI capabilities in Cursor are designed to augment your skills and knowledge, not replace your expertise and creativity. As you continue using the editor, you'll discover new ways to leverage AI assistance to write better code faster and more efficiently.
+
+Happy coding with Cursor! 🚀
+
+---
+
+*Last updated: March 2024 | For the latest features and information, visit [docs.cursor.sh](https://docs.cursor.sh)*
